@@ -13,7 +13,7 @@ License: GPLv2
 Group: System Environment/Daemons
 URL: https://github.com/input-leap/input-leap
 # Run cmake package_source to get this tarball
-Source0: https://github.com/input-leap/input-leap/archive/refs/tags/v{%package_version}.tar.gz
+Source0: https://github.com/input-leap/input-leap/archive/refs/tags/v%{package_version}.tar.gz
 
 BuildRequires: pkgconfig(avahi-compat-libdns_sd)
 BuildRequires: cmake >= 3
