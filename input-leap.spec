@@ -6,7 +6,7 @@
 Summary: Keyboard and mouse sharing solution
 Name: input-leap
 Version: %{package_version}
-Release: 1.%{?dist}
+Release: 1%{?dist}
 License: GPLv2
 Group: System Environment/Daemons
 URL: https://github.com/input-leap/input-leap
