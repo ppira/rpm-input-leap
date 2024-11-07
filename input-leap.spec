@@ -1,14 +1,12 @@
 %global package_version 3.0.2
-%global tarname InputLeap-%{version}-Source
-%global input_leap_version_desc 'git-2024-10-17-bca5258e'
-%global timestamp 202410231251
+%global tarname v%{package_version}.tar.gz
 
 %global rdnn_name io.github.input_leap.InputLeap
 
 Summary: Keyboard and mouse sharing solution
 Name: input-leap
 Version: %{package_version}
-Release: %{timestamp}.git%{input_leap_revision}%{?dist}
+Release: 1.%{?dist}
 License: GPLv2
 Group: System Environment/Daemons
 URL: https://github.com/input-leap/input-leap
@@ -43,7 +41,7 @@ Work seamlessly across Windows, macOS and Linux.
 
 %build
 %{cmake} . \
-    -DINPUTLEAP_VERSION_DESC:STRING=%{input_leap_version_desc} \
+    -DINPUTLEAP_VERSION_DESC:STRING=%{package_version} \
     -DINPUTLEAP_BUILD_LIBEI=ON \
     -DINPUTLEAP_BUILD_TESTS=ON \
     -DINPUTLEAP_USE_EXTERNAL_GTEST=True \
